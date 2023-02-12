@@ -16,6 +16,16 @@ class RestaurantTableViewCell: UITableViewCell {
     // MARK: - Views
     
     lazy var nameLabel = ViewFactory.createLabel(size: 30, weight: .bold)
+    lazy var ratingBadge = ViewFactory.createBadgeLabel(mainColor: .customDarkGreen, borderColor: .customDarkGreen)
+    lazy var discountBadge = ViewFactory.createBadgeLabel(mainColor: .black, bgColor: .customYellow)
+    lazy var cuisineBadge = ViewFactory.createBadgeLabel(mainColor: .white, bgColor: .customDarkGreen)
+    lazy var locationLabel = ViewFactory.createLabel(size: 14, weight: .light)
+    lazy var priceLabel = ViewFactory.createLabel(size: 14, weight: .medium)
+    
+    lazy var titleHStackView = ViewFactory.createHStackView(views: [nameLabel, favoritesButton], distribution: .equalSpacing)
+    lazy var badgesHStackView = ViewFactory.createHStackView(views: [ratingBadge, discountBadge, cuisineBadge, UIView()])
+    lazy var locationHStackView = ViewFactory.createHStackView(icon: "location", label: locationLabel)
+    lazy var priceHStackView = ViewFactory.createHStackView(icon: "cash", label: priceLabel)
     
     lazy var favoritesButton: UIButton = {
         let button = UIButton()
@@ -23,22 +33,10 @@ class RestaurantTableViewCell: UITableViewCell {
         button.setImage(.init(systemName: "heart.fill"), for: .selected)
         button.tintColor = .systemPink
         button.addTarget(self, action: #selector(favoritesButtonTapped), for: .touchUpInside)
+        button.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
-    lazy var titleHStackView = ViewFactory.createHStackView(views: [nameLabel, favoritesButton], distribution: .equalSpacing)
-    
-    lazy var ratingBadge = ViewFactory.createBadgeLabel(mainColor: .customDarkGreen, borderColor: .customDarkGreen)
-    lazy var discountBadge = ViewFactory.createBadgeLabel(mainColor: .black, bgColor: .customYellow)
-    lazy var cuisineBadge = ViewFactory.createBadgeLabel(mainColor: .white, bgColor: .customDarkGreen)
-    lazy var badgesHStackView = ViewFactory.createHStackView(views: [ratingBadge, discountBadge, cuisineBadge, UIView()])
-    
-    lazy var locationLabel = ViewFactory.createLabel(size: 14, weight: .light)
-    lazy var locationHStackView = ViewFactory.createHStackView(icon: "location", label: locationLabel)
-    
-    lazy var priceLabel = ViewFactory.createLabel(size: 14, weight: .medium)
-    lazy var priceHStackView = ViewFactory.createHStackView(icon: "cash", label: priceLabel)
     
     lazy var mainPictureImageView: UIImageView = {
         let imageView = UIImageView()
@@ -87,6 +85,7 @@ class RestaurantTableViewCell: UITableViewCell {
             favoritesButton.isSelected = isFavorite
         }
     }
+    
 
     // MARK: - Initializers
 

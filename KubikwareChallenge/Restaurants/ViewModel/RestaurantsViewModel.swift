@@ -46,9 +46,19 @@ class RestaurantsViewModel {
         restaurantsDataSource.count
     }
     
+    func getRestaurantUUID(for index: Int) -> String {
+        let restaurant = restaurantsDataSource[index]
+        return restaurant.uuid ?? ""
+    }
+    
     func getRestaurantName(for index: Int) -> String {
         let restaurant = restaurantsDataSource[index]
         return restaurant.name ?? "Name unavailable"
+    }
+    
+    func isRestaurantFavorite(for index: Int) -> Bool {
+        let restaurant = restaurantsDataSource[index]
+        return defaults.bool(forKey: restaurant.uuid ?? "")
     }
     
     func getRestaurantRating(for index: Int) -> String {
@@ -58,6 +68,16 @@ class RestaurantsViewModel {
         } else {
             return ""
         }
+    }
+    
+    func getRestaurantDiscount(for index: Int) -> String {
+        let restaurant = restaurantsDataSource[index]
+        return restaurant.bestOffer?.label ?? ""
+    }
+    
+    func getRestaurantCuisine(for index: Int) -> String {
+        let restaurant = restaurantsDataSource[index]
+        return restaurant.servesCuisine?.uppercased() ?? ""
     }
     
     func getRestaurantAddress(for index: Int) -> String {
@@ -78,29 +98,9 @@ class RestaurantsViewModel {
         return restaurant.priceRange?.currencyFormattedString(currency) ?? "Price unavailable"
     }
     
-    func getRestaurantCuisine(for index: Int) -> String {
-        let restaurant = restaurantsDataSource[index]
-        return restaurant.servesCuisine?.uppercased() ?? ""
-    }
-    
-    func getRestaurantDiscount(for index: Int) -> String {
-        let restaurant = restaurantsDataSource[index]
-        return restaurant.bestOffer?.label ?? ""
-    }
-    
-    func getRestaurantUUID(for index: Int) -> String {
-        let restaurant = restaurantsDataSource[index]
-        return restaurant.uuid ?? ""
-    }
-    
     func getRestaurantImageUrl(for index: Int) -> URL? {
         let restaurant = restaurantsDataSource[index]
         return URL(string: restaurant.mainPhoto?.source ?? "")
-    }
-    
-    func isRestaurantFavorite(for index: Int) -> Bool {
-        let restaurant = restaurantsDataSource[index]
-        return defaults.bool(forKey: restaurant.uuid ?? "")
     }
     
     func transform(input: AnyPublisher<Input, Never>) -> AnyPublisher<Output, Never> {
@@ -118,6 +118,9 @@ class RestaurantsViewModel {
         
         return output.eraseToAnyPublisher()
     }
+    
+    
+    // MARK: - Private methods
     
     private func handleFetchRestaurants() {
         service.fetchRestaurants()

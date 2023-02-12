@@ -14,6 +14,7 @@ struct ViewFactory {
         label.font = .systemFont(ofSize: size, weight: weight)
         label.numberOfLines = 1
         label.textAlignment = .left
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }

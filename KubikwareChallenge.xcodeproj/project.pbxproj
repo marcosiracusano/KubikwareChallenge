@@ -106,9 +106,9 @@
 		EE90E0DD299977EE00B3EBE1 /* KubikwareChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				EE90E10E299978BE00B3EBE1 /* Main */,
 				EE90E1252999809900B3EBE1 /* Utils */,
 				EE90E11329997A3400B3EBE1 /* Networking */,
-				EE90E10E299978BE00B3EBE1 /* Main */,
 				EE90E10F299979A100B3EBE1 /* Restaurants */,
 			);
 			path = KubikwareChallenge;
