@@ -13,6 +13,13 @@
 		EE90E0E8299977EF00B3EBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */; };
 		EE90E0EB299977EF00B3EBE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */; };
 		EE90E0F6299977F000B3EBE1 /* KubikwareChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */; };
+		EE90E11529997A4A00B3EBE1 /* RestaurantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11429997A4A00B3EBE1 /* RestaurantsService.swift */; };
+		EE90E11729997A6600B3EBE1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11629997A6600B3EBE1 /* Restaurant.swift */; };
+		EE90E11929997A8200B3EBE1 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11829997A8200B3EBE1 /* Address.swift */; };
+		EE90E11B29997A9900B3EBE1 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11A29997A9900B3EBE1 /* Rating.swift */; };
+		EE90E11D29997AAA00B3EBE1 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11C29997AAA00B3EBE1 /* Photo.swift */; };
+		EE90E11F29997AC800B3EBE1 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11E29997AC800B3EBE1 /* Offer.swift */; };
+		EE90E12129997BE400B3EBE1 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E12029997BE400B3EBE1 /* RestaurantTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,13 @@
 		EE90E0EC299977EF00B3EBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE90E0F1299977F000B3EBE1 /* KubikwareChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubikwareChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikwareChallengeTests.swift; sourceTree = "<group>"; };
+		EE90E11429997A4A00B3EBE1 /* RestaurantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsService.swift; sourceTree = "<group>"; };
+		EE90E11629997A6600B3EBE1 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		EE90E11829997A8200B3EBE1 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		EE90E11A29997A9900B3EBE1 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		EE90E11C29997AAA00B3EBE1 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		EE90E11E29997AC800B3EBE1 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		EE90E12029997BE400B3EBE1 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,7 @@
 		EE90E0DD299977EE00B3EBE1 /* KubikwareChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				EE90E11329997A3400B3EBE1 /* Networking */,
 				EE90E10E299978BE00B3EBE1 /* Main */,
 				EE90E10F299979A100B3EBE1 /* Restaurants */,
 			);
@@ -115,6 +130,11 @@
 		EE90E110299979AA00B3EBE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE90E11629997A6600B3EBE1 /* Restaurant.swift */,
+				EE90E11829997A8200B3EBE1 /* Address.swift */,
+				EE90E11A29997A9900B3EBE1 /* Rating.swift */,
+				EE90E11C29997AAA00B3EBE1 /* Photo.swift */,
+				EE90E11E29997AC800B3EBE1 /* Offer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				EE90E0E2299977EE00B3EBE1 /* RestaurantsViewController.swift */,
+				EE90E12029997BE400B3EBE1 /* RestaurantTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +153,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE90E11329997A3400B3EBE1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E11429997A4A00B3EBE1 /* RestaurantsService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE90E12129997BE400B3EBE1 /* RestaurantTableViewCell.swift in Sources */,
+				EE90E11D29997AAA00B3EBE1 /* Photo.swift in Sources */,
+				EE90E11929997A8200B3EBE1 /* Address.swift in Sources */,
+				EE90E11729997A6600B3EBE1 /* Restaurant.swift in Sources */,
+				EE90E11529997A4A00B3EBE1 /* RestaurantsService.swift in Sources */,
 				EE90E0E3299977EE00B3EBE1 /* RestaurantsViewController.swift in Sources */,
 				EE90E0DF299977EE00B3EBE1 /* AppDelegate.swift in Sources */,
+				EE90E11F29997AC800B3EBE1 /* Offer.swift in Sources */,
 				EE90E0E1299977EE00B3EBE1 /* SceneDelegate.swift in Sources */,
+				EE90E11B29997A9900B3EBE1 /* Rating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
