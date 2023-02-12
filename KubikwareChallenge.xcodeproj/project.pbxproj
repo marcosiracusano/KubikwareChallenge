@@ -20,6 +20,7 @@
 		EE90E11D29997AAA00B3EBE1 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11C29997AAA00B3EBE1 /* Photo.swift */; };
 		EE90E11F29997AC800B3EBE1 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11E29997AC800B3EBE1 /* Offer.swift */; };
 		EE90E12129997BE400B3EBE1 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E12029997BE400B3EBE1 /* RestaurantTableViewCell.swift */; };
+		EE90E12429997D7700B3EBE1 /* RestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E12329997D7700B3EBE1 /* RestaurantsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EE90E11C29997AAA00B3EBE1 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		EE90E11E29997AC800B3EBE1 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		EE90E12029997BE400B3EBE1 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		EE90E12329997D7700B3EBE1 /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		EE90E112299979B900B3EBE1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EE90E12329997D7700B3EBE1 /* RestaurantsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				EE90E12129997BE400B3EBE1 /* RestaurantTableViewCell.swift in Sources */,
 				EE90E11D29997AAA00B3EBE1 /* Photo.swift in Sources */,
+				EE90E12429997D7700B3EBE1 /* RestaurantsViewModel.swift in Sources */,
 				EE90E11929997A8200B3EBE1 /* Address.swift in Sources */,
 				EE90E11729997A6600B3EBE1 /* Restaurant.swift in Sources */,
 				EE90E11529997A4A00B3EBE1 /* RestaurantsService.swift in Sources */,

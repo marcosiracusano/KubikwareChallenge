@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Combine
 
 class RestaurantsViewController: UIViewController {
 
     // MARK: - Properties
+    
     lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 50, weight: .heavy)
@@ -28,14 +30,24 @@ class RestaurantsViewController: UIViewController {
         return tableView
     }()
     
+    var viewModel: RestaurantsViewModel = .init()
+    private let input: PassthroughSubject<RestaurantsViewModel.Input, Never> = .init()
+    private var cancellables = Set<AnyCancellable>()
+    
+    
+    // MARK: - Life cycle methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupView()
+        bind()
+        input.send(.viewDidLoad)
     }
     
 
+    // MARK: - Private methods
+    
     private func setupView() {
         view.addSubview(nameLabel)
         view.addSubview(tableView)
@@ -51,20 +63,47 @@ class RestaurantsViewController: UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
+    
+    private func bind() {
+        let output = viewModel.transform(input: input.eraseToAnyPublisher())
+        output
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] event in
+                switch event {
+                case .fetchRestaurantsDidFail(error: let error):
+                    print("Networking Error: \(error)")
+                    
+                case .fetchRestaurantsDidSucceed:
+                    self?.tableView.reloadData()
+                }
+            }.store(in: &cancellables)
+    }
 }
+
+
+// MARK: - Extensions
 
 extension RestaurantsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        viewModel.getRestaurantsCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: RestaurantTableViewCell.identifier, for: indexPath) as? RestaurantTableViewCell
                 
         if let cell {
-            cell.nameLabel.text = "hola"
+            cell.favoritesDelegate = self
+            cell.uuid = viewModel.getRestaurantUUID(for: indexPath.row)
+            cell.isFavorite = viewModel.isRestaurantFavorite(for: indexPath.row)
+            cell.nameLabel.text = viewModel.getRestaurantName(for: indexPath.row)
         }
         
         return cell ?? UITableViewCell()
+    }
+}
+
+extension RestaurantsViewController: RestaurantTableViewCellFavoriteDelegate {
+    func favoriteButtonDidTap(isFavorite: Bool, id: String) {
+        input.send(.favoriteButtonDidTap(isFavorite: isFavorite, uuid: id))
     }
 }
