@@ -26,6 +26,8 @@
 		EE90E12F2999899200B3EBE1 /* RestaurantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E12E2999899200B3EBE1 /* RestaurantsViewModelTests.swift */; };
 		EE90E132299989CA00B3EBE1 /* MockRestaurantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E131299989CA00B3EBE1 /* MockRestaurantsService.swift */; };
 		EE90E134299989FA00B3EBE1 /* MockFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E133299989FA00B3EBE1 /* MockFactory.swift */; };
+		EE90E13729998AB500B3EBE1 /* RestaurantsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E13629998AB500B3EBE1 /* RestaurantsViewControllerTests.swift */; };
+		EE90E13929998AD100B3EBE1 /* MockRestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E13829998AD100B3EBE1 /* MockRestaurantsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		EE90E12E2999899200B3EBE1 /* RestaurantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModelTests.swift; sourceTree = "<group>"; };
 		EE90E131299989CA00B3EBE1 /* MockRestaurantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRestaurantsService.swift; sourceTree = "<group>"; };
 		EE90E133299989FA00B3EBE1 /* MockFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFactory.swift; sourceTree = "<group>"; };
+		EE90E13629998AB500B3EBE1 /* RestaurantsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewControllerTests.swift; sourceTree = "<group>"; };
+		EE90E13829998AD100B3EBE1 /* MockRestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRestaurantsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			children = (
 				EE90E130299989B000B3EBE1 /* Mocks */,
 				EE90E12D2999897D00B3EBE1 /* ViewModel */,
+				EE90E13529998A9900B3EBE1 /* View */,
 			);
 			path = KubikwareChallengeTests;
 			sourceTree = "<group>";
@@ -200,8 +205,17 @@
 			children = (
 				EE90E131299989CA00B3EBE1 /* MockRestaurantsService.swift */,
 				EE90E133299989FA00B3EBE1 /* MockFactory.swift */,
+				EE90E13829998AD100B3EBE1 /* MockRestaurantsViewModel.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EE90E13529998A9900B3EBE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E13629998AB500B3EBE1 /* RestaurantsViewControllerTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +346,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE90E132299989CA00B3EBE1 /* MockRestaurantsService.swift in Sources */,
+				EE90E13929998AD100B3EBE1 /* MockRestaurantsViewModel.swift in Sources */,
+				EE90E13729998AB500B3EBE1 /* RestaurantsViewControllerTests.swift in Sources */,
 				EE90E12F2999899200B3EBE1 /* RestaurantsViewModelTests.swift in Sources */,
 				EE90E134299989FA00B3EBE1 /* MockFactory.swift in Sources */,
 			);
