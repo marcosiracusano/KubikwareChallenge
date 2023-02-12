@@ -1,3 +1,16 @@
+# Instructions
+
+Just hit `cmd + r` and you should be good to go. The project uses just one external library (_Kingfisher_) which was integrated with _Swift Package Manager_, so there's no need for any special setup to compile it.
+
+# Developer notes
+
+ - **Architecture**: I decided to for an MVVM architecture, as I wanted to create a scalable and testable app that wouldn't present problems in the future. This approach required a solution for the bindings management to handle state, so I decided to use the Combine framework for that. The only external library that I decided to integrate is `Kingfisher` for images fetching and handling, not because it was extremely necessary, but because it was handy, neat and reliable library.
+ 
+ - **UX/UI**: I wanted to show a simple yet complete list of rows that displayed most of the available information of each restaurant, without making it too "noisy". With that in mind, and also checking out the **thefork** website as a reference, I decided to use badges with colors to display the ratings discount info and cuisine type. Then, to show the address and price info I used the provided assets to indicate the meaning of the corresponding information to avoid extra text such as _"Address: ..."_, or _"Average price: ..."_ that would've used unnecesary space in the row. Finally, regarding the restaurants main picture, I decided to make it the main character of each row by adding a custom shadow and a border color to make it stand out.
+ 
+ - **Testing**: I wrote unit tests for most of the components of the app, reaching a total coverage of **82.7%**. I used the XCTest framework, as there wasn't any specific scenario that required the inclusion of another testing library.
+ 
+
 # iOS Technical Test
 
 The main goal of this test is to write a single screen application.
