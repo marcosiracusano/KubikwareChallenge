@@ -105,7 +105,11 @@ extension RestaurantsViewController: UITableViewDelegate, UITableViewDataSource 
             cell.favoritesDelegate = self
             cell.uuid = viewModel.getRestaurantUUID(for: indexPath.row)
             cell.isFavorite = viewModel.isRestaurantFavorite(for: indexPath.row)
+            
             cell.nameLabel.text = viewModel.getRestaurantName(for: indexPath.row)
+            cell.ratingBadge.text = viewModel.getRestaurantRating(for: indexPath.row)
+            cell.discountBadge.text = viewModel.getRestaurantDiscount(for: indexPath.row)
+            cell.cuisineBadge.text = viewModel.getRestaurantCuisine(for: indexPath.row)
             cell.locationLabel.text = viewModel.getRestaurantAddress(for: indexPath.row)
             cell.priceLabel.text = viewModel.getAveragePriceRange(for: indexPath.row)
             

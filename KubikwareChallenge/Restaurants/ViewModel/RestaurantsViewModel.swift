@@ -51,9 +51,13 @@ class RestaurantsViewModel {
         return restaurant.name ?? "Name unavailable"
     }
     
-    func getRestaurantUUID(for index: Int) -> String {
+    func getRestaurantRating(for index: Int) -> String {
         let restaurant = restaurantsDataSource[index]
-        return restaurant.uuid ?? ""
+        if let rating = restaurant.aggregateRatings?["thefork"]?.ratingValue {
+            return String(rating)
+        } else {
+            return ""
+        }
     }
     
     func getRestaurantAddress(for index: Int) -> String {
@@ -72,6 +76,21 @@ class RestaurantsViewModel {
         let restaurant = restaurantsDataSource[index]
         let currency = restaurant.currenciesAccepted ?? "eur"
         return restaurant.priceRange?.currencyFormattedString(currency) ?? "Price unavailable"
+    }
+    
+    func getRestaurantCuisine(for index: Int) -> String {
+        let restaurant = restaurantsDataSource[index]
+        return restaurant.servesCuisine?.uppercased() ?? ""
+    }
+    
+    func getRestaurantDiscount(for index: Int) -> String {
+        let restaurant = restaurantsDataSource[index]
+        return restaurant.bestOffer?.label ?? ""
+    }
+    
+    func getRestaurantUUID(for index: Int) -> String {
+        let restaurant = restaurantsDataSource[index]
+        return restaurant.uuid ?? ""
     }
     
     func getRestaurantImageUrl(for index: Int) -> URL? {

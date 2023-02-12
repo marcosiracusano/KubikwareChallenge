@@ -18,6 +18,35 @@ struct ViewFactory {
         return label
     }
     
+    static func createBadgeLabel(mainColor: UIColor, bgColor: UIColor = .clear, borderColor: UIColor = .clear) -> UILabel {
+        let label = PaddingLabel()
+        label.font = .systemFont(ofSize: 14, weight: .medium)
+        label.numberOfLines = 1
+        label.textAlignment = .center
+        label.textColor = mainColor
+        label.backgroundColor = bgColor
+        label.layer.borderColor = borderColor.cgColor
+        label.layer.borderWidth  = 2
+        label.layer.cornerRadius = 4
+        label.clipsToBounds = true
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }
+    
+    static func createRatingBadge() -> UILabel {
+        let label = PaddingLabel()
+        label.font = .systemFont(ofSize: 14, weight: .medium)
+        label.numberOfLines = 1
+        label.textAlignment = .center
+        label.textColor = .customDarkGreen
+        label.layer.borderColor = UIColor.customDarkGreen.cgColor
+        label.layer.borderWidth  = 1
+        label.layer.cornerRadius = 4
+        label.clipsToBounds = true
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }
+    
     static func createHStackView(views: [UIView], distribution: UIStackView.Distribution = .fill) -> UIStackView {
         let hStack = UIStackView()
         hStack.axis = .horizontal
@@ -51,5 +80,22 @@ struct ViewFactory {
         hStack.addArrangedSubview(UIView())
         
         return hStack
+    }
+}
+
+class PaddingLabel: UILabel {
+    var textEdgeInsets = UIEdgeInsets(top: 5, left: 8, bottom: 5, right: 8) {
+        didSet { invalidateIntrinsicContentSize() }
+    }
+    
+    open override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+        let insetRect = bounds.inset(by: textEdgeInsets)
+        let textRect = super.textRect(forBounds: insetRect, limitedToNumberOfLines: numberOfLines)
+        let invertedInsets = UIEdgeInsets(top: -textEdgeInsets.top, left: -textEdgeInsets.left, bottom: -textEdgeInsets.bottom, right: -textEdgeInsets.right)
+        return textRect.inset(by: invertedInsets)
+    }
+    
+    override func drawText(in rect: CGRect) {
+        super.drawText(in: rect.inset(by: textEdgeInsets))
     }
 }

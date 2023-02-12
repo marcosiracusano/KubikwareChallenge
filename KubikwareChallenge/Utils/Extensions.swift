@@ -30,3 +30,8 @@ extension Int {
         return formatter.string(from: number) ?? "€--"
     }
 }
+
+extension UIColor {
+    static let customYellow = UIColor(red: 249/255, green: 222/255, blue: 75/255, alpha: 1)
+    static let customDarkGreen = UIColor(red: 39/255, green: 56/255, blue: 51/255, alpha: 1)
+}
