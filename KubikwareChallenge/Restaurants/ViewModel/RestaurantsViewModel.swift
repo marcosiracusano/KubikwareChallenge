@@ -56,6 +56,11 @@ class RestaurantsViewModel {
         return restaurant.uuid ?? ""
     }
     
+    func getRestaurantImageUrl(for index: Int) -> URL? {
+        let restaurant = restaurantsDataSource[index]
+        return URL(string: restaurant.mainPhoto?.source ?? "")
+    }
+    
     func isRestaurantFavorite(for index: Int) -> Bool {
         let restaurant = restaurantsDataSource[index]
         return defaults.bool(forKey: restaurant.uuid ?? "")

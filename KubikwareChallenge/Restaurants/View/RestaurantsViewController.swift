@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import Kingfisher
 
 class RestaurantsViewController: UIViewController {
 
@@ -105,6 +106,9 @@ extension RestaurantsViewController: UITableViewDelegate, UITableViewDataSource 
             cell.uuid = viewModel.getRestaurantUUID(for: indexPath.row)
             cell.isFavorite = viewModel.isRestaurantFavorite(for: indexPath.row)
             cell.nameLabel.text = viewModel.getRestaurantName(for: indexPath.row)
+            
+            cell.mainPictureImageView.kf.setImage(with: viewModel.getRestaurantImageUrl(for: indexPath.row),
+                                                  placeholder: UIImage(named: "placeholder"))
         }
         
         return cell ?? UITableViewCell()

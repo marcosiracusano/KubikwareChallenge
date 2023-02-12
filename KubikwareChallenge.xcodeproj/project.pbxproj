@@ -21,6 +21,8 @@
 		EE90E11F29997AC800B3EBE1 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11E29997AC800B3EBE1 /* Offer.swift */; };
 		EE90E12129997BE400B3EBE1 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E12029997BE400B3EBE1 /* RestaurantTableViewCell.swift */; };
 		EE90E12429997D7700B3EBE1 /* RestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E12329997D7700B3EBE1 /* RestaurantsViewModel.swift */; };
+		EE90E127299980A200B3EBE1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E126299980A200B3EBE1 /* Extensions.swift */; };
+		EE90E12A2999815E00B3EBE1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EE90E1292999815E00B3EBE1 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		EE90E11E29997AC800B3EBE1 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		EE90E12029997BE400B3EBE1 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		EE90E12329997D7700B3EBE1 /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
+		EE90E126299980A200B3EBE1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE90E12A2999815E00B3EBE1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +96,7 @@
 		EE90E0DD299977EE00B3EBE1 /* KubikwareChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				EE90E1252999809900B3EBE1 /* Utils */,
 				EE90E11329997A3400B3EBE1 /* Networking */,
 				EE90E10E299978BE00B3EBE1 /* Main */,
 				EE90E10F299979A100B3EBE1 /* Restaurants */,
@@ -166,6 +171,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		EE90E1252999809900B3EBE1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E126299980A200B3EBE1 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +195,9 @@
 			dependencies = (
 			);
 			name = KubikwareChallenge;
+			packageProductDependencies = (
+				EE90E1292999815E00B3EBE1 /* Kingfisher */,
+			);
 			productName = KubikwareChallenge;
 			productReference = EE90E0DB299977EE00B3EBE1 /* KubikwareChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +248,9 @@
 				Base,
 			);
 			mainGroup = EE90E0D2299977EE00B3EBE1;
+			packageReferences = (
+				EE90E1282999815E00B3EBE1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = EE90E0DC299977EE00B3EBE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,6 +292,7 @@
 				EE90E11729997A6600B3EBE1 /* Restaurant.swift in Sources */,
 				EE90E11529997A4A00B3EBE1 /* RestaurantsService.swift in Sources */,
 				EE90E0E3299977EE00B3EBE1 /* RestaurantsViewController.swift in Sources */,
+				EE90E127299980A200B3EBE1 /* Extensions.swift in Sources */,
 				EE90E0DF299977EE00B3EBE1 /* AppDelegate.swift in Sources */,
 				EE90E11F29997AC800B3EBE1 /* Offer.swift in Sources */,
 				EE90E0E1299977EE00B3EBE1 /* SceneDelegate.swift in Sources */,
@@ -551,6 +571,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE90E1282999815E00B3EBE1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE90E1292999815E00B3EBE1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE90E1282999815E00B3EBE1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE90E0D3299977EE00B3EBE1 /* Project object */;
 }

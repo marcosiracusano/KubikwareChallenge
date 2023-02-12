@@ -13,7 +13,7 @@ protocol RestaurantTableViewCellFavoriteDelegate {
 
 class RestaurantTableViewCell: UITableViewCell {
 
-    // MARK: - Properties
+    // MARK: - Views
     
     lazy var nameLabel: UILabel = {
         let label = UILabel()
@@ -33,13 +33,35 @@ class RestaurantTableViewCell: UITableViewCell {
         return button
     }()
     
-    lazy var horizontalStackView: UIStackView = {
+    lazy var titleHStackView: UIStackView = {
         let hStack = UIStackView()
         hStack.axis = .horizontal
         hStack.distribution = .equalSpacing
         hStack.alignment = .center
         hStack.translatesAutoresizingMaskIntoConstraints = false
+        hStack.addArrangedSubview(nameLabel)
+        hStack.addArrangedSubview(favoritesButton)
         return hStack
+    }()
+    
+    lazy var mainPictureImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 20
+        imageView.layer.masksToBounds = true
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    lazy var mainPictureContainerView: UIView = {
+        let containerView = UIView()
+        containerView.applyShadows()
+        containerView.layer.cornerRadius = 20
+        containerView.layer.borderWidth = 1
+        containerView.layer.borderColor = UIColor.white.cgColor
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.addSubview(mainPictureImageView)
+        return containerView
     }()
     
     lazy var mainVerticalStackView: UIStackView = {
@@ -47,9 +69,15 @@ class RestaurantTableViewCell: UITableViewCell {
         vStack.axis = .vertical
         vStack.distribution = .equalSpacing
         vStack.alignment = .fill
+        vStack.spacing = 16
         vStack.translatesAutoresizingMaskIntoConstraints = false
+        vStack.addArrangedSubview(titleHStackView)
+        vStack.addArrangedSubview(mainPictureContainerView)
         return vStack
     }()
+    
+    
+    // MARK: - Properties
     
     static let identifier = String(describing: RestaurantTableViewCell.self)
     
@@ -68,14 +96,15 @@ class RestaurantTableViewCell: UITableViewCell {
         backgroundColor = .clear
         selectionStyle = .none
         
-        horizontalStackView.addArrangedSubview(nameLabel)
-        horizontalStackView.addArrangedSubview(favoritesButton)
-        
-        mainVerticalStackView.addArrangedSubview(horizontalStackView)
-        
         contentView.addSubview(mainVerticalStackView)
         
         NSLayoutConstraint.activate([
+            mainPictureImageView.topAnchor.constraint(equalTo: mainPictureContainerView.topAnchor),
+            mainPictureImageView.bottomAnchor.constraint(equalTo: mainPictureContainerView.bottomAnchor),
+            mainPictureImageView.leadingAnchor.constraint(equalTo: mainPictureContainerView.leadingAnchor),
+            mainPictureImageView.trailingAnchor.constraint(equalTo: mainPictureContainerView.trailingAnchor),
+            mainPictureImageView.heightAnchor.constraint(equalToConstant: 200),
+            
             mainVerticalStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
             mainVerticalStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),
             mainVerticalStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
