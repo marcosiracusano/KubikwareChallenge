@@ -9,24 +9,14 @@
 /* Begin PBXBuildFile section */
 		EE90E0DF299977EE00B3EBE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0DE299977EE00B3EBE1 /* AppDelegate.swift */; };
 		EE90E0E1299977EE00B3EBE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0E0299977EE00B3EBE1 /* SceneDelegate.swift */; };
-		EE90E0E3299977EE00B3EBE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0E2299977EE00B3EBE1 /* ViewController.swift */; };
-		EE90E0E6299977EE00B3EBE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E4299977EE00B3EBE1 /* Main.storyboard */; };
+		EE90E0E3299977EE00B3EBE1 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0E2299977EE00B3EBE1 /* RestaurantsViewController.swift */; };
 		EE90E0E8299977EF00B3EBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */; };
 		EE90E0EB299977EF00B3EBE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */; };
 		EE90E0F6299977F000B3EBE1 /* KubikwareChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */; };
-		EE90E100299977F000B3EBE1 /* KubikwareChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0FF299977F000B3EBE1 /* KubikwareChallengeUITests.swift */; };
-		EE90E102299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E101299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		EE90E0F2299977F000B3EBE1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE90E0D3299977EE00B3EBE1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EE90E0DA299977EE00B3EBE1;
-			remoteInfo = KubikwareChallenge;
-		};
-		EE90E0FC299977F000B3EBE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EE90E0D3299977EE00B3EBE1 /* Project object */;
 			proxyType = 1;
@@ -39,16 +29,12 @@
 		EE90E0DB299977EE00B3EBE1 /* KubikwareChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KubikwareChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE90E0DE299977EE00B3EBE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE90E0E0299977EE00B3EBE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE90E0E2299977EE00B3EBE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE90E0E5299977EE00B3EBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE90E0E2299977EE00B3EBE1 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
 		EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE90E0EA299977EF00B3EBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE90E0EC299977EF00B3EBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE90E0F1299977F000B3EBE1 /* KubikwareChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubikwareChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikwareChallengeTests.swift; sourceTree = "<group>"; };
-		EE90E0FB299977F000B3EBE1 /* KubikwareChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubikwareChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE90E0FF299977F000B3EBE1 /* KubikwareChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikwareChallengeUITests.swift; sourceTree = "<group>"; };
-		EE90E101299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikwareChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE90E0F8299977F000B3EBE1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +60,6 @@
 			children = (
 				EE90E0DD299977EE00B3EBE1 /* KubikwareChallenge */,
 				EE90E0F4299977F000B3EBE1 /* KubikwareChallengeTests */,
-				EE90E0FE299977F000B3EBE1 /* KubikwareChallengeUITests */,
 				EE90E0DC299977EE00B3EBE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +69,6 @@
 			children = (
 				EE90E0DB299977EE00B3EBE1 /* KubikwareChallenge.app */,
 				EE90E0F1299977F000B3EBE1 /* KubikwareChallengeTests.xctest */,
-				EE90E0FB299977F000B3EBE1 /* KubikwareChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +76,8 @@
 		EE90E0DD299977EE00B3EBE1 /* KubikwareChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				EE90E0DE299977EE00B3EBE1 /* AppDelegate.swift */,
-				EE90E0E0299977EE00B3EBE1 /* SceneDelegate.swift */,
-				EE90E0E2299977EE00B3EBE1 /* ViewController.swift */,
-				EE90E0E4299977EE00B3EBE1 /* Main.storyboard */,
-				EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */,
-				EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */,
-				EE90E0EC299977EF00B3EBE1 /* Info.plist */,
+				EE90E10E299978BE00B3EBE1 /* Main */,
+				EE90E10F299979A100B3EBE1 /* Restaurants */,
 			);
 			path = KubikwareChallenge;
 			sourceTree = "<group>";
@@ -118,13 +90,48 @@
 			path = KubikwareChallengeTests;
 			sourceTree = "<group>";
 		};
-		EE90E0FE299977F000B3EBE1 /* KubikwareChallengeUITests */ = {
+		EE90E10E299978BE00B3EBE1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				EE90E0FF299977F000B3EBE1 /* KubikwareChallengeUITests.swift */,
-				EE90E101299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift */,
+				EE90E0DE299977EE00B3EBE1 /* AppDelegate.swift */,
+				EE90E0E0299977EE00B3EBE1 /* SceneDelegate.swift */,
+				EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */,
+				EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */,
+				EE90E0EC299977EF00B3EBE1 /* Info.plist */,
 			);
-			path = KubikwareChallengeUITests;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EE90E10F299979A100B3EBE1 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E110299979AA00B3EBE1 /* Model */,
+				EE90E112299979B900B3EBE1 /* ViewModel */,
+				EE90E111299979B200B3EBE1 /* View */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
+		EE90E110299979AA00B3EBE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE90E111299979B200B3EBE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E0E2299977EE00B3EBE1 /* RestaurantsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE90E112299979B900B3EBE1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +172,6 @@
 			productReference = EE90E0F1299977F000B3EBE1 /* KubikwareChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EE90E0FA299977F000B3EBE1 /* KubikwareChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE90E10B299977F000B3EBE1 /* Build configuration list for PBXNativeTarget "KubikwareChallengeUITests" */;
-			buildPhases = (
-				EE90E0F7299977F000B3EBE1 /* Sources */,
-				EE90E0F8299977F000B3EBE1 /* Frameworks */,
-				EE90E0F9299977F000B3EBE1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE90E0FD299977F000B3EBE1 /* PBXTargetDependency */,
-			);
-			name = KubikwareChallengeUITests;
-			productName = KubikwareChallengeUITests;
-			productReference = EE90E0FB299977F000B3EBE1 /* KubikwareChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +186,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					EE90E0F0299977F000B3EBE1 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = EE90E0DA299977EE00B3EBE1;
-					};
-					EE90E0FA299977F000B3EBE1 = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = EE90E0DA299977EE00B3EBE1;
 					};
@@ -221,7 +206,6 @@
 			targets = (
 				EE90E0DA299977EE00B3EBE1 /* KubikwareChallenge */,
 				EE90E0F0299977F000B3EBE1 /* KubikwareChallengeTests */,
-				EE90E0FA299977F000B3EBE1 /* KubikwareChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +217,10 @@
 			files = (
 				EE90E0EB299977EF00B3EBE1 /* LaunchScreen.storyboard in Resources */,
 				EE90E0E8299977EF00B3EBE1 /* Assets.xcassets in Resources */,
-				EE90E0E6299977EE00B3EBE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EE90E0EF299977F000B3EBE1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE90E0F9299977F000B3EBE1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE90E0E3299977EE00B3EBE1 /* ViewController.swift in Sources */,
+				EE90E0E3299977EE00B3EBE1 /* RestaurantsViewController.swift in Sources */,
 				EE90E0DF299977EE00B3EBE1 /* AppDelegate.swift in Sources */,
 				EE90E0E1299977EE00B3EBE1 /* SceneDelegate.swift in Sources */,
 			);
@@ -272,15 +248,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE90E0F7299977F000B3EBE1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE90E102299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift in Sources */,
-				EE90E100299977F000B3EBE1 /* KubikwareChallengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,22 +256,9 @@
 			target = EE90E0DA299977EE00B3EBE1 /* KubikwareChallenge */;
 			targetProxy = EE90E0F2299977F000B3EBE1 /* PBXContainerItemProxy */;
 		};
-		EE90E0FD299977F000B3EBE1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EE90E0DA299977EE00B3EBE1 /* KubikwareChallenge */;
-			targetProxy = EE90E0FC299977F000B3EBE1 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE90E0E4299977EE00B3EBE1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE90E0E5299977EE00B3EBE1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,10 +392,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KubikwareChallenge/Info.plist;
+				INFOPLIST_FILE = KubikwareChallenge/Main/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -451,9 +404,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,10 +421,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KubikwareChallenge/Info.plist;
+				INFOPLIST_FILE = KubikwareChallenge/Main/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,9 +433,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -522,40 +480,6 @@
 			};
 			name = Release;
 		};
-		EE90E10C299977F000B3EBE1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KubikwareChallenge;
-			};
-			name = Debug;
-		};
-		EE90E10D299977F000B3EBE1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KubikwareChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,15 +506,6 @@
 			buildConfigurations = (
 				EE90E109299977F000B3EBE1 /* Debug */,
 				EE90E10A299977F000B3EBE1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE90E10B299977F000B3EBE1 /* Build configuration list for PBXNativeTarget "KubikwareChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE90E10C299977F000B3EBE1 /* Debug */,
-				EE90E10D299977F000B3EBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
