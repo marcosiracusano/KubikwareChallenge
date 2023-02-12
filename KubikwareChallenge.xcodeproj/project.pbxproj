@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE90E0DF299977EE00B3EBE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0DE299977EE00B3EBE1 /* AppDelegate.swift */; };
+		EE90E0E1299977EE00B3EBE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0E0299977EE00B3EBE1 /* SceneDelegate.swift */; };
+		EE90E0E3299977EE00B3EBE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0E2299977EE00B3EBE1 /* ViewController.swift */; };
+		EE90E0E6299977EE00B3EBE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E4299977EE00B3EBE1 /* Main.storyboard */; };
+		EE90E0E8299977EF00B3EBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */; };
+		EE90E0EB299977EF00B3EBE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */; };
+		EE90E0F6299977F000B3EBE1 /* KubikwareChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */; };
+		EE90E100299977F000B3EBE1 /* KubikwareChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0FF299977F000B3EBE1 /* KubikwareChallengeUITests.swift */; };
+		EE90E102299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E101299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE90E0F2299977F000B3EBE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE90E0D3299977EE00B3EBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE90E0DA299977EE00B3EBE1;
+			remoteInfo = KubikwareChallenge;
+		};
+		EE90E0FC299977F000B3EBE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE90E0D3299977EE00B3EBE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE90E0DA299977EE00B3EBE1;
+			remoteInfo = KubikwareChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE90E0DB299977EE00B3EBE1 /* KubikwareChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KubikwareChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE90E0DE299977EE00B3EBE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE90E0E0299977EE00B3EBE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE90E0E2299977EE00B3EBE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE90E0E5299977EE00B3EBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE90E0EA299977EF00B3EBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE90E0EC299977EF00B3EBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE90E0F1299977F000B3EBE1 /* KubikwareChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubikwareChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikwareChallengeTests.swift; sourceTree = "<group>"; };
+		EE90E0FB299977F000B3EBE1 /* KubikwareChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubikwareChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE90E0FF299977F000B3EBE1 /* KubikwareChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikwareChallengeUITests.swift; sourceTree = "<group>"; };
+		EE90E101299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikwareChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE90E0D8299977EE00B3EBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE90E0EE299977F000B3EBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE90E0F8299977F000B3EBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE90E0D2299977EE00B3EBE1 = {
+			isa = PBXGroup;
+			children = (
+				EE90E0DD299977EE00B3EBE1 /* KubikwareChallenge */,
+				EE90E0F4299977F000B3EBE1 /* KubikwareChallengeTests */,
+				EE90E0FE299977F000B3EBE1 /* KubikwareChallengeUITests */,
+				EE90E0DC299977EE00B3EBE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE90E0DC299977EE00B3EBE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E0DB299977EE00B3EBE1 /* KubikwareChallenge.app */,
+				EE90E0F1299977F000B3EBE1 /* KubikwareChallengeTests.xctest */,
+				EE90E0FB299977F000B3EBE1 /* KubikwareChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE90E0DD299977EE00B3EBE1 /* KubikwareChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E0DE299977EE00B3EBE1 /* AppDelegate.swift */,
+				EE90E0E0299977EE00B3EBE1 /* SceneDelegate.swift */,
+				EE90E0E2299977EE00B3EBE1 /* ViewController.swift */,
+				EE90E0E4299977EE00B3EBE1 /* Main.storyboard */,
+				EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */,
+				EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */,
+				EE90E0EC299977EF00B3EBE1 /* Info.plist */,
+			);
+			path = KubikwareChallenge;
+			sourceTree = "<group>";
+		};
+		EE90E0F4299977F000B3EBE1 /* KubikwareChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */,
+			);
+			path = KubikwareChallengeTests;
+			sourceTree = "<group>";
+		};
+		EE90E0FE299977F000B3EBE1 /* KubikwareChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E0FF299977F000B3EBE1 /* KubikwareChallengeUITests.swift */,
+				EE90E101299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift */,
+			);
+			path = KubikwareChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE90E0DA299977EE00B3EBE1 /* KubikwareChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE90E105299977F000B3EBE1 /* Build configuration list for PBXNativeTarget "KubikwareChallenge" */;
+			buildPhases = (
+				EE90E0D7299977EE00B3EBE1 /* Sources */,
+				EE90E0D8299977EE00B3EBE1 /* Frameworks */,
+				EE90E0D9299977EE00B3EBE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KubikwareChallenge;
+			productName = KubikwareChallenge;
+			productReference = EE90E0DB299977EE00B3EBE1 /* KubikwareChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE90E0F0299977F000B3EBE1 /* KubikwareChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE90E108299977F000B3EBE1 /* Build configuration list for PBXNativeTarget "KubikwareChallengeTests" */;
+			buildPhases = (
+				EE90E0ED299977F000B3EBE1 /* Sources */,
+				EE90E0EE299977F000B3EBE1 /* Frameworks */,
+				EE90E0EF299977F000B3EBE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE90E0F3299977F000B3EBE1 /* PBXTargetDependency */,
+			);
+			name = KubikwareChallengeTests;
+			productName = KubikwareChallengeTests;
+			productReference = EE90E0F1299977F000B3EBE1 /* KubikwareChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE90E0FA299977F000B3EBE1 /* KubikwareChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE90E10B299977F000B3EBE1 /* Build configuration list for PBXNativeTarget "KubikwareChallengeUITests" */;
+			buildPhases = (
+				EE90E0F7299977F000B3EBE1 /* Sources */,
+				EE90E0F8299977F000B3EBE1 /* Frameworks */,
+				EE90E0F9299977F000B3EBE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE90E0FD299977F000B3EBE1 /* PBXTargetDependency */,
+			);
+			name = KubikwareChallengeUITests;
+			productName = KubikwareChallengeUITests;
+			productReference = EE90E0FB299977F000B3EBE1 /* KubikwareChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE90E0D3299977EE00B3EBE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EE90E0DA299977EE00B3EBE1 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					EE90E0F0299977F000B3EBE1 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EE90E0DA299977EE00B3EBE1;
+					};
+					EE90E0FA299977F000B3EBE1 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EE90E0DA299977EE00B3EBE1;
+					};
+				};
+			};
+			buildConfigurationList = EE90E0D6299977EE00B3EBE1 /* Build configuration list for PBXProject "KubikwareChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE90E0D2299977EE00B3EBE1;
+			productRefGroup = EE90E0DC299977EE00B3EBE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE90E0DA299977EE00B3EBE1 /* KubikwareChallenge */,
+				EE90E0F0299977F000B3EBE1 /* KubikwareChallengeTests */,
+				EE90E0FA299977F000B3EBE1 /* KubikwareChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE90E0D9299977EE00B3EBE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE90E0EB299977EF00B3EBE1 /* LaunchScreen.storyboard in Resources */,
+				EE90E0E8299977EF00B3EBE1 /* Assets.xcassets in Resources */,
+				EE90E0E6299977EE00B3EBE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE90E0EF299977F000B3EBE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE90E0F9299977F000B3EBE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE90E0D7299977EE00B3EBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE90E0E3299977EE00B3EBE1 /* ViewController.swift in Sources */,
+				EE90E0DF299977EE00B3EBE1 /* AppDelegate.swift in Sources */,
+				EE90E0E1299977EE00B3EBE1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE90E0ED299977F000B3EBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE90E0F6299977F000B3EBE1 /* KubikwareChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE90E0F7299977F000B3EBE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE90E102299977F000B3EBE1 /* KubikwareChallengeUITestsLaunchTests.swift in Sources */,
+				EE90E100299977F000B3EBE1 /* KubikwareChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE90E0F3299977F000B3EBE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE90E0DA299977EE00B3EBE1 /* KubikwareChallenge */;
+			targetProxy = EE90E0F2299977F000B3EBE1 /* PBXContainerItemProxy */;
+		};
+		EE90E0FD299977F000B3EBE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE90E0DA299977EE00B3EBE1 /* KubikwareChallenge */;
+			targetProxy = EE90E0FC299977F000B3EBE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE90E0E4299977EE00B3EBE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE90E0E5299977EE00B3EBE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE90E0EA299977EF00B3EBE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE90E103299977F000B3EBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE90E104299977F000B3EBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE90E106299977F000B3EBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KubikwareChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE90E107299977F000B3EBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KubikwareChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE90E109299977F000B3EBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KubikwareChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KubikwareChallenge";
+			};
+			name = Debug;
+		};
+		EE90E10A299977F000B3EBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KubikwareChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KubikwareChallenge";
+			};
+			name = Release;
+		};
+		EE90E10C299977F000B3EBE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KubikwareChallenge;
+			};
+			name = Debug;
+		};
+		EE90E10D299977F000B3EBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KubikwareChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE90E0D6299977EE00B3EBE1 /* Build configuration list for PBXProject "KubikwareChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE90E103299977F000B3EBE1 /* Debug */,
+				EE90E104299977F000B3EBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE90E105299977F000B3EBE1 /* Build configuration list for PBXNativeTarget "KubikwareChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE90E106299977F000B3EBE1 /* Debug */,
+				EE90E107299977F000B3EBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE90E108299977F000B3EBE1 /* Build configuration list for PBXNativeTarget "KubikwareChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE90E109299977F000B3EBE1 /* Debug */,
+				EE90E10A299977F000B3EBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE90E10B299977F000B3EBE1 /* Build configuration list for PBXNativeTarget "KubikwareChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE90E10C299977F000B3EBE1 /* Debug */,
+				EE90E10D299977F000B3EBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE90E0D3299977EE00B3EBE1 /* Project object */;
+}
