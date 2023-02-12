@@ -56,6 +56,24 @@ class RestaurantsViewModel {
         return restaurant.uuid ?? ""
     }
     
+    func getRestaurantAddress(for index: Int) -> String {
+        let restaurant = restaurantsDataSource[index]
+        
+        if let street = restaurant.address?.street,
+           let locality = restaurant.address?.locality,
+           let country = restaurant.address?.country {
+            return street + ", " + locality + ", " + country
+        } else {
+            return "Address unavailable"
+        }
+    }
+    
+    func getAveragePriceRange(for index: Int) -> String {
+        let restaurant = restaurantsDataSource[index]
+        let currency = restaurant.currenciesAccepted ?? "eur"
+        return restaurant.priceRange?.currencyFormattedString(currency) ?? "Price unavailable"
+    }
+    
     func getRestaurantImageUrl(for index: Int) -> URL? {
         let restaurant = restaurantsDataSource[index]
         return URL(string: restaurant.mainPhoto?.source ?? "")

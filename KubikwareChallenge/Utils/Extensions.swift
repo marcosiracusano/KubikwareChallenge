@@ -17,3 +17,16 @@ extension UIView {
         layer.rasterizationScale = UIScreen.main.scale
     }
 }
+
+extension Int {
+    func currencyFormattedString(_ currency: String) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = currency
+        formatter.maximumFractionDigits = 2
+        
+        let number = NSNumber(value: self)
+        
+        return formatter.string(from: number) ?? "€--"
+    }
+}

@@ -15,13 +15,7 @@ class RestaurantTableViewCell: UITableViewCell {
 
     // MARK: - Views
     
-    lazy var nameLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 30, weight: .bold)
-        label.numberOfLines = 2
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    lazy var nameLabel = ViewFactory.createLabel(size: 30, weight: .bold)
     
     lazy var favoritesButton: UIButton = {
         let button = UIButton()
@@ -33,16 +27,13 @@ class RestaurantTableViewCell: UITableViewCell {
         return button
     }()
     
-    lazy var titleHStackView: UIStackView = {
-        let hStack = UIStackView()
-        hStack.axis = .horizontal
-        hStack.distribution = .equalSpacing
-        hStack.alignment = .center
-        hStack.translatesAutoresizingMaskIntoConstraints = false
-        hStack.addArrangedSubview(nameLabel)
-        hStack.addArrangedSubview(favoritesButton)
-        return hStack
-    }()
+    lazy var titleHStackView = ViewFactory.createHStackView(views: [nameLabel, favoritesButton], distribution: .equalSpacing)
+    
+    lazy var locationLabel = ViewFactory.createLabel(size: 14, weight: .light)
+    lazy var locationHStackView = ViewFactory.createHStackView(icon: "location", label: locationLabel)
+    
+    lazy var priceLabel = ViewFactory.createLabel(size: 14, weight: .medium)
+    lazy var priceHStackView = ViewFactory.createHStackView(icon: "cash", label: priceLabel)
     
     lazy var mainPictureImageView: UIImageView = {
         let imageView = UIImageView()
@@ -72,6 +63,8 @@ class RestaurantTableViewCell: UITableViewCell {
         vStack.spacing = 16
         vStack.translatesAutoresizingMaskIntoConstraints = false
         vStack.addArrangedSubview(titleHStackView)
+        vStack.addArrangedSubview(locationHStackView)
+        vStack.addArrangedSubview(priceHStackView)
         vStack.addArrangedSubview(mainPictureContainerView)
         return vStack
     }()
