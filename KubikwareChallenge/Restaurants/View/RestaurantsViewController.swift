@@ -21,11 +21,15 @@ class RestaurantsViewController: UIViewController {
     }()
     
     lazy var tableView: UITableView = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+        
         let tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(RestaurantTableViewCell.self, forCellReuseIdentifier: RestaurantTableViewCell.identifier)
         tableView.backgroundColor = .clear
+        tableView.refreshControl = refreshControl
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -74,9 +78,14 @@ class RestaurantsViewController: UIViewController {
                     print("Networking Error: \(error)")
                     
                 case .fetchRestaurantsDidSucceed:
+                    self?.tableView.refreshControl?.endRefreshing()
                     self?.tableView.reloadData()
                 }
             }.store(in: &cancellables)
+    }
+    
+    @objc private func pullToRefresh() {
+        input.send(.refreshControlDidPull)
     }
 }
 
