@@ -12,7 +12,6 @@
 		EE90E0E3299977EE00B3EBE1 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0E2299977EE00B3EBE1 /* RestaurantsViewController.swift */; };
 		EE90E0E8299977EF00B3EBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E7299977EF00B3EBE1 /* Assets.xcassets */; };
 		EE90E0EB299977EF00B3EBE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE90E0E9299977EF00B3EBE1 /* LaunchScreen.storyboard */; };
-		EE90E0F6299977F000B3EBE1 /* KubikwareChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */; };
 		EE90E11529997A4A00B3EBE1 /* RestaurantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11429997A4A00B3EBE1 /* RestaurantsService.swift */; };
 		EE90E11729997A6600B3EBE1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11629997A6600B3EBE1 /* Restaurant.swift */; };
 		EE90E11929997A8200B3EBE1 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E11829997A8200B3EBE1 /* Address.swift */; };
@@ -24,6 +23,9 @@
 		EE90E127299980A200B3EBE1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E126299980A200B3EBE1 /* Extensions.swift */; };
 		EE90E12A2999815E00B3EBE1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EE90E1292999815E00B3EBE1 /* Kingfisher */; };
 		EE90E12C299983C000B3EBE1 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E12B299983C000B3EBE1 /* ViewFactory.swift */; };
+		EE90E12F2999899200B3EBE1 /* RestaurantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E12E2999899200B3EBE1 /* RestaurantsViewModelTests.swift */; };
+		EE90E132299989CA00B3EBE1 /* MockRestaurantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E131299989CA00B3EBE1 /* MockRestaurantsService.swift */; };
+		EE90E134299989FA00B3EBE1 /* MockFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE90E133299989FA00B3EBE1 /* MockFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,6 @@
 		EE90E0EA299977EF00B3EBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE90E0EC299977EF00B3EBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE90E0F1299977F000B3EBE1 /* KubikwareChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KubikwareChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikwareChallengeTests.swift; sourceTree = "<group>"; };
 		EE90E11429997A4A00B3EBE1 /* RestaurantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsService.swift; sourceTree = "<group>"; };
 		EE90E11629997A6600B3EBE1 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		EE90E11829997A8200B3EBE1 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		EE90E12329997D7700B3EBE1 /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
 		EE90E126299980A200B3EBE1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EE90E12B299983C000B3EBE1 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		EE90E12E2999899200B3EBE1 /* RestaurantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModelTests.swift; sourceTree = "<group>"; };
+		EE90E131299989CA00B3EBE1 /* MockRestaurantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRestaurantsService.swift; sourceTree = "<group>"; };
+		EE90E133299989FA00B3EBE1 /* MockFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +113,8 @@
 		EE90E0F4299977F000B3EBE1 /* KubikwareChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				EE90E0F5299977F000B3EBE1 /* KubikwareChallengeTests.swift */,
+				EE90E130299989B000B3EBE1 /* Mocks */,
+				EE90E12D2999897D00B3EBE1 /* ViewModel */,
 			);
 			path = KubikwareChallengeTests;
 			sourceTree = "<group>";
@@ -182,6 +187,23 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		EE90E12D2999897D00B3EBE1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E12E2999899200B3EBE1 /* RestaurantsViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE90E130299989B000B3EBE1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EE90E131299989CA00B3EBE1 /* MockRestaurantsService.swift */,
+				EE90E133299989FA00B3EBE1 /* MockFactory.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,6 +260,7 @@
 					};
 					EE90E0F0299977F000B3EBE1 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 						TestTargetID = EE90E0DA299977EE00B3EBE1;
 					};
 				};
@@ -308,7 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE90E0F6299977F000B3EBE1 /* KubikwareChallengeTests.swift in Sources */,
+				EE90E132299989CA00B3EBE1 /* MockRestaurantsService.swift in Sources */,
+				EE90E12F2999899200B3EBE1 /* RestaurantsViewModelTests.swift in Sources */,
+				EE90E134299989FA00B3EBE1 /* MockFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,14 +536,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KubikwareChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KubikwareChallenge";
@@ -530,10 +562,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = marcosiracusano.KubikwareChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
